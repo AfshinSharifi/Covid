@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base target="_blank" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/RB Afshin.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"
+    ></script>
+
+    <link rel="icon" href="Images/Logo.png" />
+    <title>COVID-19</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header flex column">
+        <nav class="navigation flex">
+          <ul class="flex">
+            <li>
+              <span>
+                <img src="Images/Logo.png" alt="Covid-logo" />
+              </span>
+            </li>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/w/index.php?go=Go&search=covid+news&title=Special%3ASearch&ns0=1"
+                >News</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/COVID-19">Prevention</a>
+            </li>
+          </ul>
+          <div class="inSearch">
+            <input type="text" name="case" id="case" />
+            <label class="search" for="case"
+              ><i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <div class="result">
+              <ul class="flex column"></ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main flex column">
+        <section class="pandemic flex">
+          <div class="description flex column">
+            <h2>Global Pandemic</h2>
+            <p>
+              The COVID-19 pandemic, also known as the coronavirus pandemic, is
+              an ongoing global pandemic of coronavirus disease 2019 (COVID-19)
+              caused by severe acute respiratory syndrome coronavirus 2
+              (SARS-CoV-2). The novel virus was first identified from an
+              outbreak in Wuhan, China, in December 2019. Attempts to contain it
+              there failed, allowing the virus to spread to other areas of China
+              and later worldwide. The World Health Organization (WHO) declared
+              the outbreak a public health emergency of international concern on
+              30 January 2020 and a pandemic on 11 March 2020 . As of 25 August
+              2022, the pandemic had caused more than 598 million cases and 6.46
+              million confirmed deaths, making it one of the deadliest in
+              history.
+            </p>
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/COVID-19_pandemic"
+              >More <span> >>></span></a
+            >
+          </div>
+          <div class="covid-img">
+            <img src="Images/Bgcovid.png" alt="" />
+          </div>
+        </section>
+      </main>
+      <footer class="flex">
+        <div class="flex column">
+          <h3>
+            Active Cases <span><i class="fa-solid fa-user-plus"></i></span>
+          </h3>
+          <p></p>
+        </div>
+        <div class="flex column">
+          <h3>
+            Recovered Cases
+            <span><i class="fa-solid fa-user-shield"></i></span>
+          </h3>
+          <p></p>
+        </div>
+        <div class="flex column">
+          <h3>
+            Fatal Cases <span><i class="fa-solid fa-user-xmark"></i></span>
+          </h3>
+          <p></p>
+        </div>
+      </footer>
+    </div>
+    <script src="Js/all.min.js"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>

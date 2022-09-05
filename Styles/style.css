@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Sens";
+  src: url(../Fontes/SourceSansPro-Light.ttf);
+}
+@font-face {
+  font-family: "Sourbon";
+  src: url(../Fontes/Sarabun-SemiBold.ttf);
+}
+:root {
+  --primary-color: #ee5253;
+  --secondary-color: #636e72;
+  --accent-color: #dfe6e9;
+  --bg-color: #f1f1f1;
+}
+* {
+  user-select: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column {
+  flex-direction: column;
+}
+.container {
+  max-width: 80rem;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  padding: 0 1em;
+  gap: 0;
+}
+.header {
+  padding: 1em;
+}
+.navigation {
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  color: var(--secondary-color);
+}
+ul {
+  column-gap: 1em;
+}
+ul img {
+  width: 2rem;
+}
+ul li a {
+  text-decoration: none;
+  padding: 0.2em 1em;
+  color: var(--secondary-color);
+  font-family: "sourbon";
+  transition: border 0.2s;
+}
+ul a:hover {
+  border-bottom: 0.15em solid var(--primary-color);
+}
+#case {
+  background-color: #fff;
+  padding: 0.5em;
+  font-size: 1rem;
+  width: 0;
+  opacity: 0;
+  font-family: "sourbon";
+  border-radius: 4em;
+  transition: all 0.4s;
+}
+.inSearch {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.search {
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0.1em gray;
+  transition: all 0.2s;
+  padding: 0.5em;
+  position: absolute;
+  right: 0.2em;
+  top: 0.1em;
+}
+
+.search:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.result {
+  position: absolute;
+  right: 0.7em;
+  top: 2.5em;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.result ul {
+  max-height: 11rem;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+.result ul::-webkit-scrollbar {
+  display: none;
+}
+.result li {
+  padding: 0.5em;
+  width: 18rem;
+  color: var(--primary-color);
+  font-family: "sourbon";
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.result li:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.main {
+  height: 75%;
+}
+.covid-img {
+  width: 50%;
+  text-align: center;
+}
+.covid-img img {
+  width: 50%;
+}
+.pandemic {
+  justify-content: space-between;
+}
+.description {
+  width: 50%;
+  font-family: "Sens";
+  row-gap: 4em;
+  align-items: flex-start;
+}
+.description img {
+  width: 20%;
+}
+.description h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.data {
+  width: 100%;
+}
+.capital {
+  padding: 0.5em;
+  background-color: var(--secondary-color);
+  border-radius: 0.5em;
+  color: #fff;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 38%;
+}
+.data table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 100%;
+  color: #fff;
+}
+.data tr {
+  background-color: var(--primary-color);
+}
+.data th {
+  padding: 1em;
+}
+.data th:nth-child(even) {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.description p {
+  font-weight: 900;
+  text-align: justify;
+}
+.description a {
+  padding: 1em;
+  font-size: 0.8rem;
+  border-radius: 1em;
+  background-color: var(--primary-color);
+  border: 0.1em solid var(--primary-color);
+  cursor: pointer;
+  box-shadow: 0 0 0.5em var(--primary-color);
+  transition: all 0.3s;
+}
+.description a {
+  color: #fff;
+  text-decoration: none;
+}
+.description a:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 0.1em solid var(--primary-color);
+}
+footer {
+  background: rgb(238, 82, 83);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 82, 83, 1) 0%,
+    rgba(225, 50, 66, 1) 100%
+  );
+  width: 50%;
+  height: 15%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  column-gap: 3em;
+  border-radius: 1em 1em 0 0;
+  font-family: "sens";
+  font-weight: 900;
+  box-shadow: 0 0 0.5em gray;
+  color: var(--accent-color);
+}
+footer div {
+  row-gap: 1em;
+}
+footer h3 {
+  color: var(--accent-color);
+}
+@media only screen and (max-width: 1200px) {
+  .description p {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .description p {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .description p {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .description p {
+    font-size: 0.7rem;
+  }
+  .description h2 {
+    font-size: 0.9rem;
+  }
+  .description button {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+}
