@@ -126,13 +126,21 @@ ul a:hover {
 }
 .covid-img {
   width: 50%;
-  text-align: center;
+  font-family: "Sens";
+  align-items: flex-start;
+  row-gap: 4em;
 }
 .covid-img img {
-  width: 50%;
+  width: 20%;
+}
+.imgCovid {
+  width: 50% !important;
+  margin-left: 10em;
 }
 .pandemic {
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-end;
 }
 .description {
   width: 50%;
@@ -143,13 +151,39 @@ ul a:hover {
 .description img {
   width: 20%;
 }
-.description h2 {
+.compare {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 1em;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: none;
+}
+.compare:hover {
+  color: #000;
+  background-color: #fff;
+}
+.pandemic h2 {
   color: var(--primary-color);
   font-size: 2.5rem;
   font-weight: 900;
 }
 .data {
   width: 100%;
+  position: relative;
+}
+.data span {
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  position: absolute;
+  top: -50%;
+  font-weight: 900;
+  left: 0;
 }
 .capital {
   padding: 0.5em;
@@ -242,7 +276,7 @@ footer h3 {
 }
 @media screen and (max-width: 768px) {
   .description p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   footer {
     font-size: 0.7rem;
